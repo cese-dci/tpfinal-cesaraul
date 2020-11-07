@@ -465,10 +465,10 @@ Microcontrolador\ny conexiones
 Text Notes 4250 1900 0    50   ~ 0
 oscilador para el\nmicrocontrolador
 $Comp
-L fab:PINHD-1x02-SMD-HEADER M?
+L fab:PINHD-1x02-SMD-HEADER M4
 U 1 1 5FA881A7
 P 3450 1450
-F 0 "M?" H 3450 1450 45  0001 C CNN
+F 0 "M4" H 3450 1450 45  0001 C CNN
 F 1 "PINHD-1x02-SMD-HEADER" H 3450 1450 45  0001 C CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_2x01_P1.00mm_Vertical_SMD" H 3480 1600 20  0001 C CNN
 F 3 "" H 3450 1450 50  0001 C CNN
