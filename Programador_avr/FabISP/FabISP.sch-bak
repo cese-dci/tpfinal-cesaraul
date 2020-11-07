@@ -97,7 +97,7 @@ U 1 1 5F700804
 P 2500 3450
 F 0 "D1" V 2458 3528 45  0000 L CNN
 F 1 " " V 2542 3528 45  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 2530 3600 20  0001 C CNN
+F 2 "fab:fab-SOD123" H 2530 3600 20  0001 C CNN
 F 3 "" H 2500 3450 50  0001 C CNN
 	1    2500 3450
 	0    -1   -1   0   
@@ -119,7 +119,7 @@ U 1 1 5F70324B
 P 2250 3650
 F 0 "D2" V 2208 3728 45  0000 L CNN
 F 1 " " V 2292 3728 45  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 2280 3800 20  0001 C CNN
+F 2 "fab:fab-SOD123" H 2280 3800 20  0001 C CNN
 F 3 "" H 2250 3650 50  0001 C CNN
 	1    2250 3650
 	0    -1   -1   0   
@@ -469,4 +469,10 @@ Wire Notes Line
 	6900 4100 6900 1150
 Wire Notes Line
 	3600 1150 6900 1150
+Text Notes 1400 4200 0    50   ~ 0
+Conexión USB
+Text Notes 1850 1150 0    50   ~ 0
+headers para conexiones externas
+Text Notes 1100 2450 0    50   ~ 0
+Filtro de \nEnergía
 $EndSCHEMATC

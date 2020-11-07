@@ -206,17 +206,6 @@ F 3 "" H 6450 3750 50  0001 C CNN
 	1    6450 3750
 	-1   0    0    1   
 $EndComp
-$Comp
-L fab:ATTINY44-SSU IC1
-U 1 1 5F8CD30F
-P 4100 3150
-F 0 "IC1" H 4950 4004 45  0000 C CNN
-F 1 "ATTINY44-SSU" H 4950 3920 45  0000 C CNN
-F 2 "fab:fab-SOIC-14_3.9x8.7mm_P1.27mm" H 4130 3300 20  0001 C CNN
-F 3 "" H 4100 3150 50  0001 C CNN
-	1    4100 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 3750 3800 3750
 Wire Wire Line
@@ -469,4 +458,25 @@ Wire Notes Line
 	6900 4100 6900 1150
 Wire Notes Line
 	3600 1150 6900 1150
+Text Notes 1400 4200 0    50   ~ 0
+Conexión USB
+Text Notes 1850 1150 0    50   ~ 0
+headers para conexiones externas
+$Comp
+L fab:ATTINY44-SSU IC1
+U 1 1 5F8CD30F
+P 4100 3150
+F 0 "IC1" H 4950 4004 45  0000 C CNN
+F 1 "ATTINY44-SSU" H 4950 3920 45  0000 C CNN
+F 2 "fab:fab-SOIC-14_3.9x8.7mm_P1.27mm" H 4130 3300 20  0001 C CNN
+F 3 "" H 4100 3150 50  0001 C CNN
+	1    4100 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 1100 2400 0    50   ~ 0
+Condensador\nde desacople
+Text Notes 3850 4100 0    50   ~ 0
+Microcontrolador\ny conexiones
+Text Notes 4250 1900 0    50   ~ 0
+oscilador para el\nmicrocontrolador
 $EndSCHEMATC
