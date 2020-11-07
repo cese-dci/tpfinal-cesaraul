@@ -150,8 +150,6 @@ Wire Wire Line
 	3000 3300 3150 3300
 Wire Wire Line
 	3150 3300 3150 3400
-Wire Wire Line
-	2500 1500 2800 1500
 $Comp
 L power:GND #PWR05
 U 1 1 5F8A7DB2
@@ -260,17 +258,6 @@ F 3 "" H 6250 2250 50  0001 C CNN
 	1    6250 2250
 	0    1    1    0   
 $EndComp
-$Comp
-L fab:RES-US1206FAB R1
-U 1 1 5F6E5992
-P 3000 1500
-F 0 "R1" V 2958 1568 45  0000 L CNN
-F 1 "0" H 3042 1568 45  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3030 1650 20  0001 C CNN
-F 3 "" H 3000 1500 50  0001 C CNN
-	1    3000 1500
-	1    0    0    -1  
-$EndComp
 NoConn ~ 6100 3650
 NoConn ~ 6100 3550
 Text Label 6350 3250 0    50   ~ 0
@@ -373,8 +360,6 @@ Wire Wire Line
 	6650 3750 6800 3750
 Text Label 3350 1500 0    50   ~ 0
 D-
-Wire Wire Line
-	3200 1500 3350 1500
 $Comp
 L fab:MICRO-USB_1_64 M3
 U 1 1 5F9126DB
@@ -479,4 +464,23 @@ Text Notes 3850 4100 0    50   ~ 0
 Microcontrolador\ny conexiones
 Text Notes 4250 1900 0    50   ~ 0
 oscilador para el\nmicrocontrolador
+$Comp
+L fab:PINHD-1x02-SMD-HEADER M4
+U 1 1 5FA881A7
+P 3450 1450
+F 0 "M4" H 3450 1450 45  0001 C CNN
+F 1 "PINHD-1x02-SMD-HEADER" H 3450 1450 45  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x01_P1.00mm_Vertical_SMD" H 3480 1600 20  0001 C CNN
+F 3 "" H 3450 1450 50  0001 C CNN
+	1    3450 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 1500 2950 1450
+Wire Wire Line
+	2500 1500 2950 1500
+Wire Wire Line
+	3050 1450 3050 1500
+Wire Wire Line
+	3050 1500 3350 1500
 $EndSCHEMATC
