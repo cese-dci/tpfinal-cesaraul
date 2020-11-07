@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 9)
-    (tracks 153)
+    (tracks 149)
     (zones 0)
     (modules 14)
     (nets 18)
@@ -18,7 +18,7 @@
 
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -757,10 +757,6 @@
   (gr_line (start 166.5 87.5) (end 166.5 106.5) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 126.5 87.5) (end 166.5 87.5) (layer Edge.Cuts) (width 0.05))
 
-  (segment (start 128.5 92.75) (end 131.25 92.75) (width 0.25) (layer F.Cu) (net 0))
-  (segment (start 131.25 92.75) (end 131.110101 92.889899) (width 0.25) (layer F.Cu) (net 0))
-  (segment (start 130.75 101) (end 131.110101 100.639899) (width 0.25) (layer F.Cu) (net 0))
-  (segment (start 128.75 101) (end 130.75 101) (width 0.25) (layer F.Cu) (net 0))
   (segment (start 133 94.75) (end 132.29794 95.45206) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 140.45001 88.29999) (end 139.5 89.25) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 132.29794 95.45206) (end 130.759581 95.45206) (width 0.25) (layer F.Cu) (net 1) (status 20))
@@ -911,7 +907,7 @@
   (segment (start 135.475 90.85) (end 137.5 90.85) (width 0.25) (layer F.Cu) (net 17) (status 20))
   (segment (start 134.5 90.85) (end 135.475 90.85) (width 0.25) (layer F.Cu) (net 17) (status 10))
 
-  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5FA6D445) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5FA6D538) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -951,7 +947,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5FA6D442) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5FA6D535) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
