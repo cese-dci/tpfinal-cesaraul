@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 3)
+    (drawings 6)
     (tracks 176)
     (zones 0)
     (modules 18)
@@ -801,6 +801,9 @@
     (pad "" np_thru_hole circle (at 0 0) (size 2.1 2.1) (drill 2.1) (layers *.Cu *.Mask))
   )
 
+  (gr_line (start 126 109) (end 169 109) (layer Edge.Cuts) (width 0.05) (tstamp 5FB0B8BB))
+  (gr_line (start 126 84) (end 126 109) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 169 84) (end 126 84) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 169 84) (end 169 109) (layer Edge.Cuts) (width 0.05))
   (gr_text 2020 (at 129.75 91.25) (layer B.Cu)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
