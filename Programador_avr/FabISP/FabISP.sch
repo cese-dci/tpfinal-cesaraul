@@ -81,28 +81,6 @@ F 3 "" H 2600 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L fab:RES-US1206FAB R4
-U 1 1 5F6FE07F
-P 7300 5100
-F 0 "R4" H 7258 5168 45  0000 L CNN
-F 1 "1K" H 7250 5000 45  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 7330 5250 20  0001 C CNN
-F 3 "" H 7300 5100 50  0001 C CNN
-	1    7300 5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L fab:DIODESOD123 D1
-U 1 1 5F700804
-P 7000 5250
-F 0 "D1" V 7050 5100 45  0000 L CNN
-F 1 " 3.3V" V 6950 5050 45  0000 L CNN
-F 2 "fab:fab-SOD123" H 7030 5400 20  0001 C CNN
-F 3 "https://www.mouser.pe/datasheet/2/427/mmsz4681-1767767.pdf" H 7000 5250 50  0001 C CNN
-	1    7000 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 5F7029DD
 P 6850 5800
@@ -124,32 +102,6 @@ F 3 "https://www.mouser.pe/datasheet/2/427/mmsz4681-1767767.pdf" H 6750 5450 50 
 	1    6750 5450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:VCC #PWR06
-U 1 1 5F8A1864
-P 6500 4550
-F 0 "#PWR06" H 6500 4400 50  0001 C CNN
-F 1 "VCC" H 6517 4723 50  0000 C CNN
-F 2 "" H 6500 4550 50  0001 C CNN
-F 3 "" H 6500 4550 50  0001 C CNN
-	1    6500 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L fab:RES-US1206FAB R5
-U 1 1 5F8A9CBD
-P 7650 5400
-F 0 "R5" V 7608 5468 45  0000 L CNN
-F 1 "499" V 7650 5200 45  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 7680 5550 20  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7650 5400 50  0001 C CNN
-	1    7650 5400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7500 5100 7650 5100
-Wire Wire Line
-	7650 5100 7650 5200
 $Comp
 L power:GND #PWR05
 U 1 1 5F8A7DB2
@@ -295,50 +247,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2400 3700 2400
 Wire Wire Line
-	6750 5200 6750 5350
-Wire Wire Line
 	6750 5550 6750 5700
-Wire Wire Line
-	7000 5700 7000 5350
-Wire Wire Line
-	7000 5150 7000 5100
-Connection ~ 7000 5100
-Wire Wire Line
-	7000 5100 7100 5100
-Text Label 9250 4150 0    50   ~ 0
-D-
-$Comp
-L fab:MICRO-USB_1_64 M3
-U 1 1 5F9126DB
-P 6150 5000
-F 0 "M3" V 5846 5057 45  0000 C CNN
-F 1 "MICRO-USB_1_64" V 5930 5057 45  0000 C CNN
-F 2 "fab:fab-DX4R005HJ5_64" H 6180 5150 20  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UX%20Series.pdf" H 6150 5000 50  0001 C CNN
-	1    6150 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6350 5200 6750 5200
-Wire Wire Line
-	6350 5100 7000 5100
-Wire Wire Line
-	6350 5000 6500 5000
-$Comp
-L power:GND #PWR07
-U 1 1 5F91CB17
-P 6600 4950
-F 0 "#PWR07" H 6600 4700 50  0001 C CNN
-F 1 "GND" H 6605 4777 50  0000 C CNN
-F 2 "" H 6600 4950 50  0001 C CNN
-F 3 "" H 6600 4950 50  0001 C CNN
-	1    6600 4950
-	1    0    0    -1  
-$EndComp
-Text Label 7650 5700 0    50   ~ 0
-D-
-Wire Wire Line
-	7650 5600 7650 5700
 Text Label 5350 3450 0    50   ~ 0
 PB3
 Wire Wire Line
@@ -376,27 +285,8 @@ Text Notes 7950 3400 0    50   ~ 0
 Condensador\nde desacople
 Text Notes 2750 5000 0    50   ~ 0
 Microcontrolador\ny conexiones
-Text Notes 3150 2800 0    50   ~ 0
+Text Notes 2750 2250 0    50   ~ 0
 oscilador para el\nmicrocontrolador
-$Comp
-L fab:PINHD-1x02-SMD-HEADER M4
-U 1 1 5FA881A7
-P 9350 4100
-F 0 "M4" H 9350 4100 45  0001 C CNN
-F 1 "PINHD-1x02-SMD-HEADER" H 9350 4100 45  0001 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x01_P1.00mm_Vertical_SMD" H 9380 4250 20  0001 C CNN
-F 3 "" H 9350 4100 50  0001 C CNN
-	1    9350 4100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8850 4150 8850 4100
-Wire Wire Line
-	8400 4150 8850 4150
-Wire Wire Line
-	8950 4100 8950 4150
-Wire Wire Line
-	8950 4150 9250 4150
 $Comp
 L fab:PINHD-1x02-SMD-HEADER M2
 U 1 1 5F8EC706
@@ -411,14 +301,9 @@ $EndComp
 Wire Wire Line
 	5550 4650 7000 4650
 Wire Wire Line
-	7000 4650 7000 5100
-Wire Wire Line
 	5650 2950 5650 2800
 Wire Wire Line
 	5650 2800 6750 2800
-Wire Wire Line
-	6750 2800 6750 5200
-Connection ~ 6750 5200
 Wire Notes Line
 	5800 5000 5800 6000
 Wire Notes Line
@@ -429,8 +314,6 @@ Wire Wire Line
 	5000 4150 8100 4150
 Wire Wire Line
 	5000 4250 8100 4250
-Wire Wire Line
-	6500 5000 6500 4550
 Wire Wire Line
 	5000 4350 8100 4350
 Wire Notes Line
@@ -452,10 +335,6 @@ Wire Wire Line
 Connection ~ 6850 5700
 Wire Wire Line
 	6850 5700 7000 5700
-Wire Wire Line
-	6350 4900 6600 4900
-Wire Wire Line
-	6600 4900 6600 4950
 $Comp
 L fab:ATTINY44-SSU IC1
 U 1 1 5F8CD30F
@@ -467,4 +346,177 @@ F 3 "https://www.digikey.com/htmldatasheets/production/1224118/0/0/1/attiny24a-4
 	1    3000 4050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FBFB1B6
+P 2600 5100
+F 0 "H1" H 2700 5146 50  0000 L CNN
+F 1 "MountingHole" H 2700 5055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 2600 5100 50  0001 C CNN
+F 3 "~" H 2600 5100 50  0001 C CNN
+	1    2600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FBFBBEB
+P 2600 5300
+F 0 "H2" H 2700 5346 50  0000 L CNN
+F 1 "MountingHole" H 2700 5255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 2600 5300 50  0001 C CNN
+F 3 "~" H 2600 5300 50  0001 C CNN
+	1    2600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FBFC158
+P 2600 5500
+F 0 "H3" H 2700 5546 50  0000 L CNN
+F 1 "MountingHole" H 2700 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 2600 5500 50  0001 C CNN
+F 3 "~" H 2600 5500 50  0001 C CNN
+	1    2600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FBFC6AE
+P 2600 5700
+F 0 "H4" H 2700 5746 50  0000 L CNN
+F 1 "MountingHole" H 2700 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2600 5700 50  0001 C CNN
+F 3 "~" H 2600 5700 50  0001 C CNN
+	1    2600 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4900 6600 4950
+$Comp
+L power:GND #PWR07
+U 1 1 5F91CB17
+P 6600 4950
+F 0 "#PWR07" H 6600 4700 50  0001 C CNN
+F 1 "GND" H 6605 4777 50  0000 C CNN
+F 2 "" H 6600 4950 50  0001 C CNN
+F 3 "" H 6600 4950 50  0001 C CNN
+	1    6600 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5F8A1864
+P 6500 4550
+F 0 "#PWR06" H 6500 4400 50  0001 C CNN
+F 1 "VCC" H 6517 4723 50  0000 C CNN
+F 2 "" H 6500 4550 50  0001 C CNN
+F 3 "" H 6500 4550 50  0001 C CNN
+	1    6500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5000 6500 4600
+Wire Wire Line
+	6350 5000 6500 5000
+Wire Wire Line
+	7500 5100 7650 5100
+$Comp
+L fab:RES-US1206FAB R5
+U 1 1 5F8A9CBD
+P 7650 4800
+F 0 "R5" V 7608 4868 45  0000 L CNN
+F 1 "499" V 7650 4600 45  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7680 4950 20  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7650 4800 50  0001 C CNN
+	1    7650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L fab:RES-US1206FAB R4
+U 1 1 5F6FE07F
+P 7300 5100
+F 0 "R4" H 7258 5168 45  0000 L CNN
+F 1 "1K" H 7250 5000 45  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 7330 5250 20  0001 C CNN
+F 3 "" H 7300 5100 50  0001 C CNN
+	1    7300 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 4650 7000 5100
+Wire Wire Line
+	6350 5100 7000 5100
+Connection ~ 7000 5100
+Wire Wire Line
+	7000 5100 7100 5100
+Wire Wire Line
+	7000 5150 7000 5100
+Wire Wire Line
+	6750 2800 6750 5200
+Wire Wire Line
+	6750 5200 6750 5350
+Connection ~ 6750 5200
+Wire Wire Line
+	6350 5200 6750 5200
+Wire Wire Line
+	7000 5700 7000 5350
+$Comp
+L fab:DIODESOD123 D1
+U 1 1 5F700804
+P 7000 5250
+F 0 "D1" V 7050 5100 45  0000 L CNN
+F 1 " 3.3V" V 6950 5050 45  0000 L CNN
+F 2 "fab:fab-SOD123" H 7030 5400 20  0001 C CNN
+F 3 "https://www.mouser.pe/datasheet/2/427/mmsz4681-1767767.pdf" H 7000 5250 50  0001 C CNN
+	1    7000 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 4900 6600 4900
+$Comp
+L fab:MICRO-USB_1_64 M3
+U 1 1 5F9126DB
+P 6150 5000
+F 0 "M3" V 5846 5057 45  0000 C CNN
+F 1 "MICRO-USB_1_64" V 5930 5057 45  0000 C CNN
+F 2 "fab:fab-DX4R005HJ5_64" H 6180 5150 20  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UX%20Series.pdf" H 6150 5000 50  0001 C CNN
+	1    6150 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 5100 7650 5000
+Wire Wire Line
+	7650 4600 6500 4600
+Connection ~ 6500 4600
+Wire Wire Line
+	6500 4600 6500 4550
+$Comp
+L power:VCC #PWR0101
+U 1 1 5FC41E41
+P 9250 4000
+F 0 "#PWR0101" H 9250 3850 50  0001 C CNN
+F 1 "VCC" H 9267 4173 50  0000 C CNN
+F 2 "" H 9250 4000 50  0001 C CNN
+F 3 "" H 9250 4000 50  0001 C CNN
+	1    9250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L fab:RES-US1206FAB R1
+U 1 1 5FC44D74
+P 9000 4150
+F 0 "R1" H 8950 4250 45  0000 L CNN
+F 1 "0" H 9000 4050 45  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 9030 4300 20  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9000 4150 50  0001 C CNN
+	1    9000 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 4150 8800 4150
+Wire Wire Line
+	9200 4150 9250 4150
+Wire Wire Line
+	9250 4150 9250 4000
 $EndSCHEMATC

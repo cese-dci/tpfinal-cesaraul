@@ -1,0 +1,9 @@
+Manufacturer=ON Semiconductor
+PartNumber=SZMMSZ4681T1G
+PartCategory=Zener Diode
+PackageCategory=Small Outline Diode
+PinCount=2
+Version=1.2
+Released=2019-11-25 03:07:20
+Downloaded=2020-11-15 05:02:03
+3D=Y
