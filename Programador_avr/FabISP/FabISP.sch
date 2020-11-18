@@ -519,4 +519,26 @@ Wire Wire Line
 	9200 4150 9250 4150
 Wire Wire Line
 	9250 4150 9250 4000
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5FB56B2E
+P 3700 5100
+F 0 "FID1" H 3785 5146 50  0000 L CNN
+F 1 "Fiducial" H 3785 5055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3700 5100 50  0001 C CNN
+F 3 "~" H 3700 5100 50  0001 C CNN
+	1    3700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5FB573C0
+P 3700 5300
+F 0 "FID2" H 3785 5346 50  0000 L CNN
+F 1 "Fiducial" H 3785 5255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 3700 5300 50  0001 C CNN
+F 3 "~" H 3700 5300 50  0001 C CNN
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
